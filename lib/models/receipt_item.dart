@@ -1,8 +1,8 @@
 class ReceiptItem {
-    String name;
-    double price;
+    final String name;
+    final double price;
     
-    ReceiptItem({
+    const ReceiptItem({
       required this.name,
       required this.price,
     });
