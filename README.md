@@ -1,16 +1,44 @@
-# test
+Tabby Split is a mobile receipt-splitting app built with Flutter and Dart. It is designed to make splitting restaurant bills easier by extracting items from a receipt and helping users divide the cost among multiple people.
 
-A new Flutter project.
+Project Status
 
-## Getting Started
+Tabby Split is currently under active development.
 
-This project is a starting point for a Flutter application.
+The current focus is building the core receipt-splitting workflow before adding more advanced features.
 
-A few resources to get you started if this is your first Flutter project:
+Goal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Splitting a restaurant bill can become complicated when different people order different items, especially when accounting for tax and tip.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tabby Split aims to simplify this process:
+
+Receipt → Items → People → Assign Items → Calculate → Split Bill
+
+Planned Features
+
+Capture or upload receipt photos
+Extract receipt items and prices using OCR
+Convert extracted receipt data into structured items
+Enter the number of people splitting the bill
+Split the bill evenly
+Split individual items between specific people
+Calculate tax and tip
+Automatically calculate each person's total
+Support multi-page receipts
+Detect and remove duplicate receipt items
+Mobile-first Flutter interface
+
+Tech Stack
+
+Flutter — Cross-platform mobile development
+Dart — Application programming language
+Git / GitHub — Version control
+OCR / Receipt Parsing — Planned for receipt data extraction
+
+Author
+
+Meng Wang
+
+Computer Science student at Drexel University.
+
+GitHub: @wmeng117

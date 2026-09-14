@@ -18,7 +18,11 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
   Widget build(BuildContext context) {
   return Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 190, 43, 190)
+          backgroundColor: const Color.fromARGB(255, 27, 135, 182)
+        ),
+        
+        body: ListView(
+
         ),
       );
   }
