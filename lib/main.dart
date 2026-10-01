@@ -29,14 +29,19 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
 
 
   void _addItem() {
-      double actualPrice = double.parse(itemPriceInput.text); // Price from user input parsed as double within the button.
-    
-    setState(() {
-      items.add(
-        ReceiptItem(name: itemNameInput.text, price: actualPrice)
-      );
-    });
-  }
+      double? actualPrice = double.tryParse(itemPriceInput.text); // Price from user input parsed as double within the button.
+      if (actualPrice == null) {
+      // Show an error message or handle invalid input
+      print("Please enter a valid price");
+      return;
+      } else {
+        setState(() {
+          items.add(
+            ReceiptItem(name: itemNameInput.text, price: actualPrice)
+          );
+        });
+      }
+    }
 
 
   @override
