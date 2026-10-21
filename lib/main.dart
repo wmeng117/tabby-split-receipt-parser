@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'models/receipt_item.dart';
+import 'models/ReceiptItem.dart';
 import 'dart:io';
 
 void main() {
@@ -31,9 +31,10 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
   void _addItem() {
       double? actualPrice = double.tryParse(itemPriceInput.text); // Price from user input parsed as double within the button.
       if (actualPrice == null) {
+      
       // Show an error message or handle invalid input
-      print("Please enter a valid price");
-      return;
+        print("Please enter a valid price");
+        return;
       } else {
         setState(() {
           items.add(
@@ -41,7 +42,11 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
           );
         });
       }
-    }
+  }
+
+  
+
+  
 
 
   @override
